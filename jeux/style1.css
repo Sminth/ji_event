@@ -1,0 +1,188 @@
+
+body{
+	/* display: flex; */
+	/*min-height: 100vh;*/
+	background:#2c3e50;
+}
+
+
+@keyframes animate{
+	0%{
+		transform: perspective(1000px) rotateY(0deg);
+	}
+	100%{
+		transform: perspective(1000px) rotateY(360deg);
+	}
+}
+
+        
+.gif1{
+	position: absolute;
+	top:150px;right: 50px;
+	width: 150px;
+}
+
+.typewriter p,.typewriter h1 {
+	color: #fff;
+
+	font-family: monospace;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid orange; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	/*margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .15em; /* Adjust as needed */
+	animation: 
+	  typing 3.5s steps(30, end),
+	  blink-caret .5s step-end infinite;
+  }
+  .typewriter p {
+
+	/* font-size: 15px; */
+	
+  }
+  /* The typing effect */
+  @keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: orange }
+  }
+
+ /* h1{
+	color: #fff;
+	position: absolute;
+	margin-top: 370px;
+	margin-left: 600px;
+}*/
+
+.aq{
+	position: absolute;
+	margin-top: 520px;
+	margin-left: 395px;
+
+}
+	
+.text-3d {
+	font-size: 2rem;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%) skewY(-6deg);
+	transform-origin: bottom left;
+	color: transparent;
+	text-shadow: 
+	 1px -1px 10px rgba(255, 255, 255, 0.4), 
+	 0px -1px 10px rgba(255, 255, 255, 0.4),  
+	-1px -1px 10px rgba(255, 255, 255, 0.4), 
+	 0px -2px 3px #fff, 
+	-1px -2px 3px #fff, 
+	-2px -2px 3px #fff,
+	-1px -3px 2px #ddd, 
+	-2px -3px 2px #ddd, 
+	-3px -3px 2px #ddd,
+	-2px -4px 2px #ff0000, 
+	-3px -4px 2px #ff0000, 
+	-4px -4px 2px #ff0000,
+	-3px -5px 1px #ff0000, 
+	-4px -5px 1px #ff0000, 
+	-5px -5px 1px #ff0000;
+}
+.text-3d:before {
+	content: "LE TRESOR SE CACHE QUELQUE PART...";
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: skewX(30deg);
+	transform-origin: bottom left;
+	z-index: -1;
+	color: transparent;
+	text-shadow:  
+	15px 0px 20px rgba(0, 0, 0, 0.25), 
+	15px 0px 25px rgba(0, 0, 0, 0.2),
+	15px 0px 35px rgba(0, 0, 0, 0.15), 
+	15px 0px 45px rgba(0, 0, 0, 0.1);
+}
+
+.tex-3d {
+	font-size: 2rem;
+	position: absolute;
+	top: 45%;
+	left: 10%;
+	transform: translate(-50%, -50%) skewY(-6deg);
+	transform-origin: bottom left;
+	color: transparent;
+	text-shadow: 
+	 1px -1px 10px rgba(255, 255, 255, 0.4), 
+	 0px -1px 10px rgba(255, 255, 255, 0.4),  
+	-1px -1px 10px rgba(255, 255, 255, 0.4), 
+	 0px -2px 3px #fff, 
+	-1px -2px 3px #fff, 
+	-2px -2px 3px #fff,
+	-1px -3px 2px #ddd, 
+	-2px -3px 2px #ddd, 
+	-3px -3px 2px #ddd,
+	-2px -4px 2px #4B0082, 
+	-3px -4px 2px #4B0082, 
+	-4px -4px 2px #4B0082,
+	-3px -5px 1px #4B0082, 
+	-4px -5px 1px #4B0082, 
+	-5px -5px 1px #4B0082;
+}
+.tex-3d:before {
+	content: " ";
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: skewX(30deg);
+	transform-origin: bottom left;
+	z-index: -1;
+	color: transparent;
+	text-shadow:  
+	15px 0px 20px rgba(0, 0, 0, 0.25), 
+	15px 0px 25px rgba(0, 0, 0, 0.2),
+	15px 0px 35px rgba(0, 0, 0, 0.15), 
+	15px 0px 45px rgba(0, 0, 0, 0.1);
+}
+
+.az{
+	text-align: center;
+	font-family: arimo;
+	margin-top: 350px;
+	/*font-size: 80px;
+	color: #0e3742;
+	/*margin-left: 400px; */
+	text-transform: uppercase;
+	-webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+	line-height: 0.70em;
+	outline: none;
+	animation : anim 5s linear infinite;
+}
+
+@keyframes anim{
+	0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+		color: #0e3742;
+		text-shadow: none;
+	}
+
+	18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+		color: #fff;
+		text-shadow: 0 0 10px #03bcf4,
+		0 0 20px #03bcf4,
+		0 0 40px #03bcf4,
+		0 0 80px #03bcf4,
+		0 0 160px #03bcf4;
+	}
+}
+
+.ai{
+	 position: fixed;
+	bottom: 10px; 
+	/* margin-top: 520px;
+	margin-left: 870px; */
+}
+
+

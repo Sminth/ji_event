@@ -1,0 +1,109 @@
+h2{
+    font-size:35px
+}
+
+#content{
+   margin: 100px;
+   margin-left: 12px;
+   width: 100%;
+}
+
+#countdown {
+    font-size: 120px;
+    color:  rgb(181, 154, 56);
+    margin-top: -150px;
+}
+
+#countdown {
+    Width:100%;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    margin: O auto;
+    align-items: center;
+}
+
+
+
+
+#countdown > span{
+        width: 90px;
+        /* height: px; */
+        user-select: none;
+        background: linear-gradient( to right, #e6c843, rgb(255, 255, 255)) ;
+        font-family: fantasy;
+        
+        
+        justify-content:center;
+        text-align: center;
+        font-size: 50px;
+        margin-left: 50px;
+        margin-top: 50px;
+        border-top-left-radius:0.5rem;
+        border-top-right-radius:0.5rem;
+        position:relative;
+
+}
+
+#countdown #d::after{
+    content: "J O U R S";
+    font-family: fantasy;
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    bottom:-30px;
+    transform: translateX(-50%);
+    font-size:1.0rem;
+    background-color: rgb(255, 240, 240);
+    border-bottom-left-radius:0.5rem;
+    border-bottom-right-radius:0.5rem;
+}
+
+#countdown #h::after{
+    
+    content: "H E U R E S";
+    font-family: fantasy;
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    bottom:-30px;
+    transform: translateX(-50%);
+    font-size:1.0rem;
+    background-color:  rgb(255, 240, 240);
+    border-bottom-left-radius:0.5rem;
+    border-bottom-right-radius:0.5rem;
+}
+
+#countdown #m::after{
+    
+    content: "M I N U T E S";
+    font-family: fantasy;
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    bottom:-30px;
+    transform: translateX(-50%);
+    font-size:1.0rem;
+    background-color: rgb(255, 240, 240);
+    border-bottom-left-radius:0.5rem;
+    border-bottom-right-radius:0.5rem;
+}
+
+#countdown #s::after{
+    
+    content: "S E C O N D E S";
+    font-family: fantasy;
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    bottom:-30px;
+    transform: translateX(-50%);
+    font-size:1.0rem;
+    background-color: rgb(255, 240, 240);
+    border-bottom-left-radius:0.5rem;
+    border-bottom-right-radius:0.5rem;
+}
